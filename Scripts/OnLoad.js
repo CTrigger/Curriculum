@@ -6,7 +6,7 @@ function LoadPageRequest(el) {
             el.innerHTML = xhttp.responseText;
         }
     }
-    xhttp.open("GET", "./Section/" + el.getAttribute("id") + ".html");
+    xhttp.open("GET", "./Section/" + el.getAttribute("id") + ".html?ver=" + Math.random());
     xhttp.send();
 }
 
