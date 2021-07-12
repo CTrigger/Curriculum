@@ -1,7 +1,9 @@
 ul.noBullets {
     list-style-type: none;
 }
-
+.customWrap {
+    min-height: 100%;
+}
 .text-right {
     text-align:right;
     /* padding-right: 1em; */
