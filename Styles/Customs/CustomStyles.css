@@ -1,5 +1,17 @@
+body {
+    padding-top: 88px;
+    padding-bottom: 70px;
+}
 ul.noBullets {
     list-style-type: none;
+}
+.customFooter-60 {
+    width:60% !important; 
+    float:left !important;
+}
+.customFooter-40 {
+    width:40% !important; 
+    float:left !important;
 }
 .customWrap {
     min-height: 100%;
