@@ -1,4 +1,5 @@
-function LoadPageRequest(el) {
+//SPA_Request
+function LoadPageRequest(el, path) {
     var response = "";
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
@@ -6,17 +7,28 @@ function LoadPageRequest(el) {
             el.innerHTML = xhttp.responseText;
         }
     }
-    xhttp.open("GET", "./Section/" + el.getAttribute("id") + ".html?ver=" + Math.random());
+    xhttp.open("GET", "./" + path + "/" + el.getAttribute("data-section") + ".html?ver=" + Math.random());
     xhttp.send();
 }
 
-var contentList = document.querySelectorAll("[data-content='true']");
-contentList.forEach(
-    function (e) {
-        LoadPageRequest(e);
-    }
-);
+//PageRender
+function containerNavigationOnChange() {
+    var contentList = document.querySelectorAll(".container > [data-content='true']");
+    contentList.forEach(
+        function (e) {
+            LoadPageRequest(e, 'View/Curriculum');
+        }
+    );
+}
 
 
-
-
+//wait document be ready
+document.addEventListener('DOMContentLoaded', function () {
+    //SectionViews
+    var contentList = document.querySelectorAll("[data-content='true']");
+    contentList.forEach(
+        function (e) {
+            LoadPageRequest(e, 'Section');
+        }
+    );
+})

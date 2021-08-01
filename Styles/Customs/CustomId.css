@@ -6,3 +6,10 @@ img#Avatar {
     overflow: hidden;
   
 }
+
+#PageRender{
+    overflow-y: auto;
+    height: 100vh;
+    padding-top: 88px;
+    padding-bottom: 70px;
+}
