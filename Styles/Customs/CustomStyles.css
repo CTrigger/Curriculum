@@ -2,7 +2,7 @@ body {
     /* padding-top: 88px;
     padding-bottom: 70px; */
     font-family: 'Garamond';
-    font-size: 105%;
+    font-size: 120%;
 }
 ul.noBullets {
     list-style-type: none;
@@ -114,6 +114,12 @@ a {
 
 /*Printing*/
 @media print{
+    body {
+        /* padding-top: 88px;
+        padding-bottom: 70px; */
+        font-family: 'Garamond';
+        font-size: 105%;
+    }
     header, footer {display: none;}
     #PageRender{
         overflow-y: auto;
