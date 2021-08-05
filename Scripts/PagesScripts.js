@@ -7,3 +7,10 @@ function OpenUdemy(url){
         '_blank'
     )
 }
+
+function OpenIconURL(url){
+    window.open(
+        url,
+        '_blank'
+    )
+}

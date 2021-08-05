@@ -34,7 +34,11 @@ h2 {
 h3 {
     color:#394660;
 }
+h3 > a{
+    color:#394660;
+}
 
+/* Table */
 table {
     text-align: center;
     width: 100%;
@@ -73,6 +77,8 @@ table td {
     padding: 0.3em 0.5em;
     vertical-align: central;
 }
+
+/* To looks like a link */
 /* https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor */
 /* https://codepen.io/jstn/pen/zuDst */
 .span-link{
@@ -103,7 +109,9 @@ table td {
     width: 100%; 
     left: 0; 
 }
-
+.link-type {
+    cursor: pointer;
+}
 a {
     text-decoration: none;
     border-bottom: black 1px solid;
@@ -142,7 +150,62 @@ a {
     .bi{
         display: none;
     }
+    a {
+        text-decoration: none;
+        border-bottom: none;
+    }
+    /* https://stackoverflow.com/questions/9140585/hr-not-seen-when-printing */
+    hr {
+        display: block;
+        height: 1px;
+        background: transparent;
+        width: 100%;
+        border: none;
+        border-top: solid 1px #aaa;
+    }
 
+    /* Table */
+    table {
+        text-align: center;
+        width: 100%;
+        border: solid black 1px;
+
+        background-color: #fafdff;
+        border-collapse: collapse;
+        border-spacing: 0px;
+        border: none;
+        box-sizing: inherit;
+        color: black;
+        /* font-family: Merriweather, Arial, sans-serif; */
+        font-size: 15px;
+        margin: 0px 0px 2.5rem;
+        -webkit-print-color-adjust: exact; 
+    }
+
+    table th {
+        background-color: #4d627f;
+        border: 1px solid rgb(207, 215, 224);
+        box-sizing: inherit;
+        color: #fafdff;
+        /* font-family: Lato; */
+        margin: 0px;
+        padding: 0.3em 0.5em;
+        text-align: center;
+        text-transform: capitalize;
+        vertical-align: central;
+        -webkit-print-color-adjust: exact; 
+    }
+
+    table td {
+        border: 1px solid rgb(207, 215, 224);
+        box-sizing: inherit;
+        color: #1f3656;
+        /* font-size: 14px; */
+        margin: 0px;
+        padding: 0.3em 0.5em;
+        vertical-align: central;
+        -webkit-print-color-adjust: exact; 
+    }
 }
 /* @font-face {
     font-family: customFont;

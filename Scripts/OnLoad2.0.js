@@ -92,6 +92,9 @@ function MenuRequest(section) {
         .catch(error => {
             console.error(error);
         });
+
+        //after click in menu close the accordion
+        document.querySelector('button[data-bs-target="#menu_1"][aria-expanded="true"]').click()
 }
 
 
