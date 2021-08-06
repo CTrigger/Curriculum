@@ -206,6 +206,9 @@ a {
         vertical-align: central;
         -webkit-print-color-adjust: exact; 
     }
+    .card-header {
+        -webkit-print-color-adjust: exact; 
+    }
 }
 /* @font-face {
     font-family: customFont;

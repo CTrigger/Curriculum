@@ -16,7 +16,7 @@ function OpenIconURL(url){
 }
 
 function ModalDataLoad(el) {
-    fetch(el)
+    fetch('#')
     .then(()=>{
         var root = el.parentElement.parentElement.parentElement.parentElement;
         var title = root.querySelector('.card-header > img ').getAttribute('title');

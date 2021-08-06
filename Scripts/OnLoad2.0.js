@@ -94,7 +94,11 @@ function MenuRequest(section) {
         });
 
         //after click in menu close the accordion
-        document.querySelector('button[data-bs-target="#menu_1"][aria-expanded="true"]').click()
+        var responsiveToogle = document.querySelector('button[data-bs-target="#menu_1"][aria-expanded="true"]');
+        if (responsiveToogle) {
+            responsiveToogle.click();
+            
+        }
 }
 
 
