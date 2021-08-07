@@ -1,0 +1,42 @@
+[
+    {
+        "Q": "Are you evaluating new challenges?",
+        "A": "<ul><li>Yes and no ;)<br />There is a hidden feature in my picture, you can click there to save as pdf or print.</li></ul>"
+    },
+    {
+        "Q":"Which developer roles makes sense for you?",
+        "A":"<ul><li>Backend developer, certainly.<br />But I also accepting fullstack position.</li></ul>"
+    },
+    {
+        "Q":"The best time to contact you?",
+        "A":"<ul><li>I work from 16:00 until 1:00, so feel free to call me anytime between 9:30 and 15:00.</li></ul>"
+    },
+    {
+        "Q":"Did you have a driver license?",
+        "A":"<ul><li>No I don't have, maybe in future but this isn't in my main plans for now.</li></ul>"
+    },
+    {
+        "Q":"How your former coleges / friends / family describe you?",
+        "A":"<ul><li>To be very honest I'm not even able to think about myself in this way but in otherwise I did a personality test and I don't mind to share</li><li><a href=\"https://www.16personalities.com/istj-personality\"target=\"_blank\">Logistician ISTJ-A</a><ul><li>Introvert (69%)</li><li>Observant (64%)</li><li>Thinking (73%)</li><li>Judging (69%)</li><li>Assertive (58%)</li></ul></li></ul>"
+    },
+    {
+        "Q":"Could you describe your strengths and weakness?",
+        "A":"<ul><li>No, there could be some differences between what I am and what I think I am.</li><li>I did a personality test and I'm not desagree with any words.<br />Feel free to take a <a target=\"_blank\"href=\"https://www.16personalities.com/istj-strengths-and-weaknesses\">look</a></li></ul>"
+    },
+    {
+        "Q":"How do you spend your time when you're not working?",
+        "A":"<ul><li>I'm a simple person (or maybe not), I like to...<ul><li>Cook, my favorite recipes is asian food.</li><li>Workout, sometimes I go to park to do some exercices.</li><li>Study, working with technology requires keep yourself updated.</li><li>Play with my rubik's puzzles, I have a huge collection and I can solve all symetrical types. (not cuboid type)</li><li>Play videogames, my favorite ones are the RPG types.</li></ul></li></ul>"
+    },
+    {
+        "Q":"What is it your main motivations?",
+        "A":"<ul><li>My motivations are related with algorithms, when I was in collegemy first motivation was the International College Programming Contest (ICPC)and was in that momment I realized there is so many differents algorithms solutionsregarding the efficiency and performing Big-O analyses and finally I figure out.This is what I want to do until the endof life.</li></ul>"
+    },
+    {
+        "Q":"Why your CV page looks a like being \"incomplete\"?",
+        "A":"<ul><li>This is called Agile... I can't build this entire page with all features which Iplanned in 5 minutes, so I working to myself with partial delivering.</li><li>Assuming you also going to ask if I following some agile methodology, once Iworking only with myself to build this page I follow the Kanban framework.</li></ul>"    
+    },
+    {
+        "Q":"Do you have any experience with deployment tool?",
+        "A":"<li>Yes, Jenkins and Git.</li><li>By the way, this page is deployed with Git</li>"
+    }
+]

@@ -1,14 +1,4 @@
-/* Section/Certificates */
-//udemy Hyperlink redirect
-function OpenUdemy(url){
-    url = 'https://ude.my/' + url;
-    window.open(
-        url,
-        '_blank'
-    )
-}
-
-function OpenIconURL(url){
+function OpenUrl(url){
     window.open(
         url,
         '_blank'
@@ -20,22 +10,18 @@ function ModalDataLoad(el) {
     .then(()=>{
         var root = el.parentElement.parentElement.parentElement.parentElement;
         var title = root.querySelector('.card-header > img ').getAttribute('title');
-        var content = root.querySelector('.card-body > .card-text ').innerText;
+        var content = root.querySelector('.card-body > .card-text ').innerHTML;
 
         var modal = document.querySelector(el.getAttribute('data-bs-target'));
         modal.querySelector('.modal-header > .modal-title').innerText = title;
-        modal.querySelector('.modal-body').innerText = content;
+        modal.querySelector('.modal-body').innerHTML = content;
     })
 
 }
 
 function CleanModal(el) {
     var modal = el.parentElement.parentElement;
-        modal.querySelector('.modal-header > .modal-title').innerText = '';
-        modal.querySelector('.modal-body').innerText = '';
-    // fetch(el)
-    // .then(()=>{
+        modal.querySelector('.modal-header > .modal-title').innerHTML = '';
+        modal.querySelector('.modal-body').innerHTML = '';
 
-        
-    // })
 }
