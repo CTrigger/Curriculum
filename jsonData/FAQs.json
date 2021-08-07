@@ -1,7 +1,7 @@
 [
     {
         "Q": "Are you evaluating new challenges?",
-        "A": "<ul><li>Yes and no ;)<br />There is a hidden feature in my picture, you can click there to save as pdf or print.</li></ul>"
+        "A": "<ul><li>Yes, only some development position.</li></ul>"
     },
     {
         "Q":"Which developer roles makes sense for you?",
@@ -29,11 +29,11 @@
     },
     {
         "Q":"What is it your main motivations?",
-        "A":"<ul><li>My motivations are related with algorithms, when I was in collegemy first motivation was the International College Programming Contest (ICPC)and was in that momment I realized there is so many differents algorithms solutionsregarding the efficiency and performing Big-O analyses and finally I figure out.This is what I want to do until the endof life.</li></ul>"
+        "A":"<ul><li>My motivations are related with algorithms, when I was in collegemy first motivation was the International College Programming Contest (ICPC) and was in that momment I realized there is so many differents algorithms solutionsregarding the efficiency and performing Big-O analyses and finally I figure out. This is what I want to do until the end of life.</li></ul>"
     },
     {
         "Q":"Why your CV page looks a like being \"incomplete\"?",
-        "A":"<ul><li>This is called Agile... I can't build this entire page with all features which Iplanned in 5 minutes, so I working to myself with partial delivering.</li><li>Assuming you also going to ask if I following some agile methodology, once Iworking only with myself to build this page I follow the Kanban framework.</li></ul>"    
+        "A":"<ul><li>This is called Agile... I can't build this entire page with all features which Iplanned in 5 minutes, so I working to myself with partial delivering.</li><li>Assuming you also going to ask if I following some agile methodology, once I working only with myself to build this page I follow the Kanban framework.</li></ul>"    
     },
     {
         "Q":"Do you have any experience with deployment tool?",
