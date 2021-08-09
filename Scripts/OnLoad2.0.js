@@ -54,6 +54,9 @@ function MenuRequest(section) {
                     }
                 );
             }
+            if (internalContent.getAttribute("data-section") == 'Introduction') {
+                IntroductionRequest();
+            }
             if (internalContent.getAttribute("data-section") == 'FAQs') {
                 FAQsRequest();
             }
@@ -98,6 +101,32 @@ function GetJsonData(data) {
         });
 
 }
+/* Introduction DataControl */
+async function IntroductionRequest() {
+    var AccordionMain = document.querySelector('ul#IntroductionParagraphs');
+    const Intro = await GetJsonData('Introduction');
+    var i = 0;
+    if (Intro) {
+        Intro.forEach(f => {
+            AccordionMain.innerHTML += BuildIntroduction(f.p);
+        });
+    }
+
+}
+
+
+function BuildIntroduction(p) {
+    var DivElement =
+        '<p>' +
+        '   {p}' +
+        '</p>';
+
+    DivElement = DivElement
+        .replace(/{p}/g, p);
+
+    return DivElement;
+}
+
 
 /*FAQs DataControl */
 async function FAQsRequest() {
@@ -142,7 +171,7 @@ function BuildAccordionFAQs(question, answer, i) {
 }
 
 
-/* Certificates */
+/* Certificates DadaControl */
 async function CertificatesRequest() {
     var DivCertificates = document.querySelector('div#Certificates');
     const Certificates = await GetJsonData('Certificates');
