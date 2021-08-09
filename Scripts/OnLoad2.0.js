@@ -135,7 +135,7 @@ async function FAQsRequest() {
     var i = 0;
     if (Faqs) {
         Faqs.forEach(f => {
-            AccordionMain.innerHTML += BuildAccordionFAQs(f.Q, f.A, i++);
+            AccordionMain.innerHTML += BuildAccordionFAQs(f.Q, f.A, ++i);
         });
     }
 
@@ -149,7 +149,7 @@ function BuildAccordionFAQs(question, answer, i) {
         '        <button class="bg-light accordion-button collapsed" type="button" data-bs-toggle="collapse"' +
         '            data-bs-target="#flush-{collapse}" aria-expanded="false" aria-controls="flush-{collapse}">' +
         '            <h5 style="font-weight: bold">' +
-        '               {heading-data}' +
+        '               {i}. {heading-data}' +
         '            </h5>' +
         '        </button>' +
         '    </h2>' +
@@ -165,7 +165,8 @@ function BuildAccordionFAQs(question, answer, i) {
         .replace(/{heading-data}/g, question)
         .replace(/{body-data}/g, answer)
         .replace(/{heading}/g, 'heading_' + i)
-        .replace(/{collapse}/g, 'collapse_' + i);
+        .replace(/{collapse}/g, 'collapse_' + i)
+        .replace(/{i}/g, i);
 
     return DivElement;
 }
