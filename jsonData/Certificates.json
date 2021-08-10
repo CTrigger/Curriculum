@@ -61,5 +61,12 @@
         "image": "./Images/Udemy/UC-8735070a-6fdf-4a86-a587-0fbda21c1ed6.jpg",
         "link": "https://ude.my/UC-8735070a-6fdf-4a86-a587-0fbda21c1ed6",
         "mins": "540 mins"
+    },
+    {
+        "title":"Understanding TypeScript - 2021 Edition",
+        "description":"Course with ",
+        "image":"./Images/Udemy/UC-4b51a4c7-d460-47d1-ae67-1327645a3383.jpg",
+        "link":"https://ude.my/UC-4b51a4c7-d460-47d1-ae67-1327645a3383",
+        "mins":"900 mins"
     }
 ]
