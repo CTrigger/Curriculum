@@ -119,7 +119,9 @@ a {
 /* a::before{
     content: "<i class='bi bi-link-45deg' style='font-size: 2rem; color: cornflowerblue;'></i>"
 } */
-
+.onlyPrint {
+    display:none !important;
+}
 /*Printing*/
 @media print{
     body {
@@ -208,6 +210,10 @@ a {
     }
     .card-header {
         -webkit-print-color-adjust: exact; 
+    }
+    .onlyPrint {
+        display:block !important;
+        
     }
 }
 /* @font-face {
