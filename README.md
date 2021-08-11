@@ -1,6 +1,9 @@
 # Curriculum
 https://ctrigger.github.io/Curriculum/Index.html
 
+* 2021-08-10: updates
+    * experience update.
+    
 * 2021-08-09: updates
     * Gramar revision at Introduction.
 
