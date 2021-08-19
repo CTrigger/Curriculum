@@ -22,10 +22,36 @@ document.addEventListener('DOMContentLoaded', function () {
 
 })
 
-function MenuRequest(section) {
+/* MenuController */
+async function MenuRequest(section) {
     var internalContent = document.querySelector('#PageRender');
     internalContent.setAttribute('data-section', section);
-    //console.log(PathBuilder(internalContent, section));
+    PageRenderControl(internalContent);
+
+    //after click in menu close the accordion
+    var responsiveToogle = document.querySelector('button[data-bs-target="#menu_1"][aria-expanded="true"]');
+    if (responsiveToogle) {
+        responsiveToogle.click();
+    }
+}
+
+/* PageRender */
+function DataSectionRequest(internalContent) {
+    if (internalContent.getAttribute("data-section") == 'Curriculum') {
+        CvRequest();
+    }
+    if (internalContent.getAttribute("data-section") == 'Introduction') {
+        IntroductionRequest();
+    }
+    if (internalContent.getAttribute("data-section") == 'FAQs') {
+        FAQsRequest();
+    }
+    if (internalContent.getAttribute("data-section") == 'Certificates') {
+        CertificatesRequest();
+    }
+}
+
+async function PageRenderControl(internalContent) {
     fetch(PathBuilder(internalContent, 'Section'))
         .then(response => {
             //return response.blob();//images
@@ -34,45 +60,12 @@ function MenuRequest(section) {
         .then(content => {
             internalContent.innerHTML = content;
         })
-        /*Substancial improvements is needed at this "then"*/
         .then(content => {
-            if (internalContent.getAttribute("data-section") == 'Curriculum') {
-                var contentList = document.querySelectorAll(".container > [data-content='true']");
-                contentList.forEach(
-                    function (e) {
-                        fetch(PathBuilder(e, 'View/Curriculum'))
-                            .then(response => {
-                                //return response.blob();//images
-                                return response.text();//html
-                            })
-                            .then(content => {
-                                e.innerHTML = content;
-                            })
-                            .catch(error => {
-                                console.log(error);
-                            });
-                    }
-                );
-            }
-            if (internalContent.getAttribute("data-section") == 'Introduction') {
-                IntroductionRequest();
-            }
-            if (internalContent.getAttribute("data-section") == 'FAQs') {
-                FAQsRequest();
-            }
-            if (internalContent.getAttribute("data-section") == 'Certificates') {
-                CertificatesRequest();
-            }
+            DataSectionRequest(internalContent);
         })
         .catch(error => {
             console.error(error.text);
         });
-
-    //after click in menu close the accordion
-    var responsiveToogle = document.querySelector('button[data-bs-target="#menu_1"][aria-expanded="true"]');
-    if (responsiveToogle) {
-        responsiveToogle.click();
-    }
 }
 
 async function InternalRequest(el, section) {
@@ -83,11 +76,13 @@ async function InternalRequest(el, section) {
         })
         .then(content => {
             el.innerHTML = content;
+            return content;
         })
         .catch(error => {
             console.error(error);
         });
 }
+
 
 /*JSON DataLoader */
 function GetJsonData(data) {
@@ -101,6 +96,57 @@ function GetJsonData(data) {
         });
 
 }
+
+/* CV */
+async function CvRequest() {
+    var contentList = document.querySelectorAll(".container > [data-content='true']");
+    contentList.forEach(
+        function (e) {
+            fetch(PathBuilder(e, 'View/Curriculum'))
+                .then(response => {
+                    return response.text();
+                })
+                .then(content => {
+                    e.innerHTML = content;
+                    if (e.getAttribute("data-section") == 'Skills') {
+                        CV_SkillsRequest();
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+        }
+    );
+}
+
+async function CV_SkillsRequest() {
+    var Dossie = document.querySelector('#skillsContent');
+    const Skills = await GetJsonData('Dossie');
+    if (Skills) {
+        Skills.forEach(f => {
+            Dossie.innerHTML += BuildSkills(f.Tool, f.Level, f.Experience, f.Observation, f.Type);
+        });
+    }
+}
+
+function BuildSkills(tool, level, experience, observation, type) {
+    var Skill =
+        '<tr data-skill="{type}">' +
+        '   <td>{tool}</td>' +
+        '   <td>{level}</td>' +
+        '   <td>{experience}</td>' +
+        '   <td>{observation}</td>' +
+        '</tr>'
+    Skill = Skill
+        .replace(/{tool}/g, tool)
+        .replace(/{level}/g, level)
+        .replace(/{experience}/g, experience)
+        .replace(/{observation}/g, observation)
+        .replace(/{type}/g, type);
+    return Skill;
+}
+
+
 /* Introduction DataControl */
 async function IntroductionRequest() {
     var AccordionMain = document.querySelector('ul#IntroductionParagraphs');
@@ -113,7 +159,6 @@ async function IntroductionRequest() {
     }
 
 }
-
 
 function BuildIntroduction(p) {
     var DivElement =
@@ -140,7 +185,6 @@ async function FAQsRequest() {
     }
 
 }
-
 
 function BuildAccordionFAQs(question, answer, i) {
     var DivElement =

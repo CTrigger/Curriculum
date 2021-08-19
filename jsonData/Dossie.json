@@ -1,274 +1,352 @@
-{
-    "list": [
-        {
-            "tool": "C#",
-            "level": 3,
-            "experience": "4 years",
-            "observations": "Version 4.5"
-        },
-        {
-            "tool": "ASP.NET MVC",
-            "level": 3,
-            "experience": "4 years",
-            "observations": "MVC 3 and 4"
-        },
-        {
-            "tool": "Javascript",
-            "level": 3,
-            "experience": "4 years",
-            "observations": ""
-        },
-        {
-            "tool": "jQuery",
-            "level": 3,
-            "experience": "4 years",
-            "observations": ""
-        },
-        {
-            "tool": "HTML",
-            "level": 3,
-            "experience": "5 years",
-            "observations": "Version 5"
-        },
-        {
-            "tool": "T-SQL",
-            "level": 3,
-            "experience": "2 years",
-            "observations": ""
-        },
-        {
-            "tool": "Dapper",
-            "level": 2,
-            "experience": "2 years",
-            "observations": ""
-        },
-        {
-            "tool": "Web API",
-            "level": 2,
-            "experience": "2 years",
-            "observations": ""
-        },
-        {
-            "tool": "CSS",
-            "level": 2,
-            "experience": "3.5 years",
-            "observations": ""
-        },
-        {
-            "tool": "VBA",
-            "level": 1,
-            "experience": "<1 year",
-            "observations": "Udemy Course (5.5 hours)"
-        },
-        {
-            "tool": "Python",
-            "level": 1,
-            "experience": "<1 year",
-            "observations": "Udemy Course (21 hours)"
-        },
-        {
-            "tool": "C",
-            "level": 1,
-            "experience": "3 years",
-            "observations": "Competitive skills at ICPC"
-        },
-        {
-            "tool": "Batch Script",
-            "level": 2,
-            "experience": "2 years",
-            "observations": "Automation Process"
-        },
-        {
-            "tool": "XML",
-            "level": 2,
-            "experience": "3 years",
-            "observations": ""
-        },
-        {
-            "tool": "Xamarin",
-            "level": 1,
-            "experience": "2 years",
-            "observations": "Personal Projects (UI for IoT)"
-        },
-        {
-            "tool": "LINQ",
-            "level": 2,
-            "experience": "2 years",
-            "observations": ".NET 4.5"
-        },
-        {
-            "tool": "Lambda",
-            "level": 2,
-            "experience": "2 years",
-            "observations": ".NET 4.5"
-        },
-        {
-            "tool": "Bootstrap",
-            "level": 2,
-            "experience": "2 years",
-            "observations": ""
-        },
-        {
-            "tool": "Metro UI",
-            "level": 2,
-            "experience": "2 years",
-            "observations": ""
-        },
-        {
-            "tool": "Node.js",
-            "level": 1,
-            "experience": "<1 year",
-            "observations": "Personal project"
-        },
-        {
-            "tool": "TypeScript",
-            "level": 1,
-            "experience": "<1 year",
-            "observations": "Udemy Course"
-        },
-        {
-            "tool": "Visual Studio",
-            "level": 2,
-            "experience": "6 years",
-            "observations": ""
-        },
-        {
-            "tool": "Git",
-            "level": 1,
-            "experience": "<1 year",
-            "observations": "Personal project"
-        },
-        {
-            "tool": "SVN Tortoise",
-            "level": 2,
-            "experience": "2 years",
-            "observations": ""
-        },
-        {
-            "tool": "Jenkins",
-            "level": 2,
-            "experience": "2 years",
-            "observations": ""
-        },
-        {
-            "tool": "Photoshop",
-            "level": 2,
-            "experience": "4 years",
-            "observations": "Photo adjusts for E-Commerce"
-        },
-        {
-            "tool": "Illustrator",
-            "level": 1,
-            "experience": "<1 year",
-            "observations": "Personal project (PCB Manufacturing)"
-        },
-        {
-            "tool": "Sony Vegas",
-            "level": 1,
-            "experience": "2 years",
-            "observations": "Personal project"
-        },
-        {
-            "tool": "Eagle CAD",
-            "level": 1,
-            "experience": "1 year",
-            "observations": "Personal project (PCB Design)"
-        },
-        {
-            "tool": "Autocad",
-            "level": 2,
-            "experience": "2 years",
-            "observations": "Personal project"
-        },
-        {
-            "tool": "Quartus II",
-            "level": 1,
-            "experience": "2 years",
-            "observations": "College projects"
-        },
-        {
-            "tool": "Audacity",
-            "level": 1,
-            "experience": "1 year",
-            "observations": "Personal project"
-        },
-        {
-            "tool": "Arduino",
-            "level": 1,
-            "experience": "2 years",
-            "observations": "Personal projects"
-        },
-        {
-            "tool": "Node MCU",
-            "level": 1,
-            "experience": "3 years",
-            "observations": "Personal projects (IoT)"
-        },
-        {
-            "tool": "IIS",
-            "level": 2,
-            "experience": "3 years",
-            "observations": ""
-        },
-        {
-            "tool": "SQL Server",
-            "level": 2,
-            "experience": "4 years",
-            "observations": "Versions 2008 and 2012"
-        },
-        {
-            "tool": "VirtualBox",
-            "level": 1,
-            "experience": "2 years",
-            "observations": "Personal test enviroments"
-        },
-        {
-            "tool": "ARP",
-            "level": 1,
-            "experience": "<1 year",
-            "observations": "Personal project"
-        },
-        {
-            "tool": "Port forwarding",
-            "level": 1,
-            "experience": "2 years",
-            "observations": "Personal projects (IoT, Personal Cloud Storage)"
-        },
-        {
-            "tool": "MVC",
-            "level": 2,
-            "experience": "4 years",
-            "observations": ""
-        },
-        {
-            "tool": "SOLID",
-            "level": 2,
-            "experience": "2 years",
-            "observations": ""
-        },
-        {
-            "tool": "DDD",
-            "level": 2,
-            "experience": "2 years",
-            "observations": "Not pure DDD"
-        },
-        {
-            "tool": "Scrum",
-            "level": 2,
-            "experience": "<1 year",
-            "observations": ""
-        },
-        {
-            "tool": "Kanban",
-            "level": 2,
-            "experience": "4 years",
-            "observations": ""
-        },
-        {
-            "tool": "ITIL",
-            "level": 1,
-            "experience": "<1 year",
-            "observations": "Version 2"
-        }
-    ]
-}
+[
+    {
+        "Tool": "C#.NET",
+        "Level": 3,
+        "Experience": "4 years",
+        "Observation": "Versions 4.5",
+        "Type": 1
+    },
+    {
+        "Tool": "ASP.NET MVC",
+        "Level": 3,
+        "Experience": "4 years",
+        "Observation": "MVC 3 and 4",
+        "Type": 1
+    },
+    {
+        "Tool": "JavaScript",
+        "Level": 3,
+        "Experience": "4 years",
+        "Observation": "",
+        "Type": 1
+    },
+    {
+        "Tool": "jQuery",
+        "Level": 3,
+        "Experience": "4 years",
+        "Observation": "",
+        "Type": 1
+    },
+    {
+        "Tool": "HTML",
+        "Level": 3,
+        "Experience": "5 years",
+        "Observation": "Version 5",
+        "Type": 1
+    },
+    {
+        "Tool": "Web API",
+        "Level": 2,
+        "Experience": "2 years",
+        "Observation": "",
+        "Type": 1
+    },
+    {
+        "Tool": "CSS",
+        "Level": 2,
+        "Experience": "3.5 year",
+        "Observation": "",
+        "Type": 1
+    },
+    {
+        "Tool": "Bootstrap",
+        "Level": 2,
+        "Experience": "2 years",
+        "Observation": "",
+        "Type": 1
+    },
+    {
+        "Tool": "SVN Tortoise",
+        "Level": 2,
+        "Experience": "2 years",
+        "Observation": "",
+        "Type": 3
+    },
+    {
+        "Tool": "Typescript",
+        "Level": 1,
+        "Experience": "0 years",
+        "Observation": "Udemy Course",
+        "Type": 1
+    },
+    {
+        "Tool": "PostgreSQL",
+        "Level": 1,
+        "Experience": "0 years",
+        "Observation": "Udemy Course",
+        "Type": 2
+    },
+    {
+        "Tool": "C",
+        "Level": 1,
+        "Experience": "3 year",
+        "Observation": "Competitive skills at ICPC",
+        "Type": 1
+    },
+    {
+        "Tool": "T-SQL",
+        "Level": 3,
+        "Experience": "1 year",
+        "Observation": "T-SQL and Stored Procedures",
+        "Type": 2
+    },
+    {
+        "Tool": "Jenkins",
+        "Level": 3,
+        "Experience": "2 year",
+        "Observation": "",
+        "Type": 3
+    },
+    {
+        "Tool": "Redmine",
+        "Level": 3,
+        "Experience": "2 year",
+        "Observation": "",
+        "Type": 3
+    },
+    {
+        "Tool": "Batch Script",
+        "Level": 2,
+        "Experience": "2 years",
+        "Observation": "Process Automation",
+        "Type": 1
+    },
+    {
+        "Tool": "XML",
+        "Level": 2,
+        "Experience": "3 years",
+        "Observation": "",
+        "Type": 1
+    },
+    {
+        "Tool": "LINQ",
+        "Level": 2,
+        "Experience": "2 years",
+        "Observation": ".Net 4.5",
+        "Type": 1
+    },
+    {
+        "Tool": "Lambda",
+        "Level": 2,
+        "Experience": "2 years",
+        "Observation": ".Net 4.5",
+        "Type": 1
+    },
+    {
+        "Tool": "Xamarin",
+        "Level": 1,
+        "Experience": "2 Years",
+        "Observation": "Personal Projects (UI for IoT)",
+        "Type": 1
+    },
+    {
+        "Tool": "Dapper",
+        "Level": 2,
+        "Experience": "2 years",
+        "Observation": "",
+        "Type": 1
+    },
+    {
+        "Tool": "MetroUI",
+        "Level": 2,
+        "Experience": "2 years",
+        "Observation": "",
+        "Type": 1
+    },
+    {
+        "Tool": "SOLID",
+        "Level": 2,
+        "Experience": "2 year",
+        "Observation": "Singleton, Open and Close, Liskov, Interface, Depency Inversion",
+        "Type": 4
+    },
+    {
+        "Tool": "Visual Studio",
+        "Level": 2,
+        "Experience": "6 years",
+        "Observation": "The best IDE in the world",
+        "Type": 5
+    },
+    {
+        "Tool": "Visual Studio Code",
+        "Level": 1,
+        "Experience": "&lt;1 year",
+        "Observation": "The second best IDE in the world",
+        "Type": 5
+    },
+    {
+        "Tool": "Node.js",
+        "Level": 1,
+        "Experience": "&lt;1 year",
+        "Observation": "Personal Projects",
+        "Type": 1
+    },
+    {
+        "Tool": "Git",
+        "Level": 1,
+        "Experience": "&lt;1 year",
+        "Observation": "Personal Projects",
+        "Type": 3
+    },
+    {
+        "Tool": "Python",
+        "Level": 1,
+        "Experience": "0 year",
+        "Observation": "Completed Udemy Course (21 hours)",
+        "Type": 1
+    },
+    {
+        "Tool": "VBA",
+        "Level": 1,
+        "Experience": "0 year",
+        "Observation": "Completed Udemy Course (5.5 hours)",
+        "Type": 1
+    },
+    {
+        "Tool": "Photoshop",
+        "Level": 2,
+        "Experience": "4 years",
+        "Observation": "Not designer, image treatment for E-commerce",
+        "Type": 5
+    },
+    {
+        "Tool": "Illustrator",
+        "Level": 1,
+        "Experience": "&lt;1 year",
+        "Observation": "Personal Projects (PCB manufactoring)",
+        "Type": 5
+    },
+    {
+        "Tool": "Sony Vegas",
+        "Level": 1,
+        "Experience": "2 years",
+        "Observation": "Personal Projects",
+        "Type": 5
+    },
+    {
+        "Tool": "Eagle Cad",
+        "Level": 1,
+        "Experience": "1 year",
+        "Observation": "Personal Projects",
+        "Type": 6
+    },
+    {
+        "Tool": "Autocad",
+        "Level": 2,
+        "Experience": "2 years",
+        "Observation": "Personal Projects",
+        "Type": 5
+    },
+    {
+        "Tool": "Quartus II",
+        "Level": 1,
+        "Experience": "2 years",
+        "Observation": "College Projects",
+        "Type": 6
+    },
+    {
+        "Tool": "Audacity",
+        "Level": 1,
+        "Experience": "1 year",
+        "Observation": "Personal Projects",
+        "Type": 5
+    },
+    {
+        "Tool": "Protheus PCB",
+        "Level": 1,
+        "Experience": "2 years",
+        "Observation": "Personal PCB manufactoring",
+        "Type": 6
+    },
+    {
+        "Tool": "Arduino",
+        "Level": 1,
+        "Experience": "2 years",
+        "Observation": "Personal Projects",
+        "Type": 6
+    },
+    {
+        "Tool": "Node MCU",
+        "Level": 1,
+        "Experience": "3 years",
+        "Observation": "Personal Projects (IoT)",
+        "Type": 6
+    },
+    {
+        "Tool": "IIS",
+        "Level": 2,
+        "Experience": "3 years",
+        "Observation": "",
+        "Type": 7
+    },
+    {
+        "Tool": "SQL Server",
+        "Level": 2,
+        "Experience": "4 years",
+        "Observation": "2008 and 2012",
+        "Type": 2
+    },
+    {
+        "Tool": "Windows Server",
+        "Level": 1,
+        "Experience": "&lt;1 years",
+        "Observation": "Version: 2012 R2",
+        "Type": 7
+    },
+    {
+        "Tool": "VirtualBox",
+        "Level": 1,
+        "Experience": "2 years",
+        "Observation": "Personal Test Enviroments",
+        "Type": 7
+    },
+    {
+        "Tool": "ARP",
+        "Level": 1,
+        "Experience": "&lt;1 year",
+        "Observation": "Personal Projects",
+        "Type": 7
+    },
+    {
+        "Tool": "Port Fowarding",
+        "Level": 1,
+        "Experience": "2 years",
+        "Observation": "Personal Projects (IoT, Personal Cloud)",
+        "Type": 7
+    },
+    {
+        "Tool": "MVC",
+        "Level": 2,
+        "Experience": "4 years",
+        "Observation": "",
+        "Type": 8
+    },
+    {
+        "Tool": "DDD",
+        "Level": 2,
+        "Experience": "2 year",
+        "Observation": "Not pure DDD",
+        "Type": 8
+    },
+    {
+        "Tool": "Scrum",
+        "Level": 2,
+        "Experience": "&lt;1 year",
+        "Observation": "",
+        "Type": 9
+    },
+    {
+        "Tool": "Kanban",
+        "Level": 2,
+        "Experience": "4 years",
+        "Observation": "",
+        "Type": 9
+    },
+    {
+        "Tool": "ITIL",
+        "Level": 1,
+        "Experience": "&lt;1 year",
+        "Observation": "Version 2",
+        "Type": 7
+    }
+]
