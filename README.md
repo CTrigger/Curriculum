@@ -1,6 +1,9 @@
 # Curriculum
 https://ctrigger.github.io/Curriculum/Index.html
 
+* 2021-08-21: updates
+    * Sort DossieSkills and group.
+    
 * 2021-08-10: updates
     * experience update.
     

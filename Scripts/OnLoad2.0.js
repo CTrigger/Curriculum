@@ -86,7 +86,7 @@ async function InternalRequest(el, section) {
 
 /*JSON DataLoader */
 function GetJsonData(data) {
-    return fetch('./jsonData/' + data + '.json')
+    return fetch('./jsonData/' + data + '.json?ver='+ Math.floor(Math.random() * 100))
         .then(response => {
             return response.json();
         })
@@ -108,9 +108,7 @@ async function CvRequest() {
                 })
                 .then(content => {
                     e.innerHTML = content;
-                    if (e.getAttribute("data-section") == 'Skills') {
-                        CV_SkillsRequest();
-                    }
+                    DataCVRequest(e);
                 })
                 .catch(error => {
                     console.log(error);
@@ -119,16 +117,50 @@ async function CvRequest() {
     );
 }
 
+function DataCVRequest(e) {
+    if (e.getAttribute("data-section") == 'Skills') {
+        CV_SkillsRequest();
+    }
+}
+
 async function CV_SkillsRequest() {
     var Dossie = document.querySelector('#skillsContent');
     const Skills = await GetJsonData('Dossie');
+
+    Skills.sort((a, b) => {
+        if (a.Type == b.Type) {
+            return b.Level - a.Level;
+        }
+        return a.Type - b.Type;
+    });
+
+    var TypeMapping = [
+        'Programming Languages', //1
+        'Database',             //2
+        'DevOps',               //3
+        'Good Practices',       //4
+        'Softwares',            //5
+        'Eletronics',           //6
+        'Infra',                //7
+        'Patterns',             //8
+        'Agile'];               //9
+
+    var idx = -1;
     if (Skills) {
         Skills.forEach(f => {
+            if (idx != f.Type) {
+                idx = f.Type;
+                Dossie.innerHTML += BuildSkillSeparator(idx, TypeMapping[idx - 1]);
+            }
             Dossie.innerHTML += BuildSkills(f.Tool, f.Level, f.Experience, f.Observation, f.Type);
         });
     }
 }
-
+function BuildSkillSeparator(id, typeMapping) {
+    return '<tr><th colspan="4">{id}. {TypeMapping}</th></tr>'
+    .replace(/{id}/g, id)
+    .replace(/{TypeMapping}/g, typeMapping);
+}
 function BuildSkills(tool, level, experience, observation, type) {
     var Skill =
         '<tr data-skill="{type}">' +
