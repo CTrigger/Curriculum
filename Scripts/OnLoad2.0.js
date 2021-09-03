@@ -37,18 +37,23 @@ async function MenuRequest(section) {
 
 /* PageRender */
 function DataSectionRequest(internalContent) {
-    if (internalContent.getAttribute("data-section") == 'Curriculum') {
-        CvRequest();
+    switch (internalContent.getAttribute("data-section")) {
+        case 'Curriculum':
+            CvRequest();
+            break;
+        case 'Introduction':
+            IntroductionRequest();
+            break;
+        case 'FAQs':
+            FAQsRequest();
+            break;
+        case 'Certificates':
+            CertificatesRequest();
+            break;
+        default:
+            break;
     }
-    if (internalContent.getAttribute("data-section") == 'Introduction') {
-        IntroductionRequest();
-    }
-    if (internalContent.getAttribute("data-section") == 'FAQs') {
-        FAQsRequest();
-    }
-    if (internalContent.getAttribute("data-section") == 'Certificates') {
-        CertificatesRequest();
-    }
+
 }
 
 async function PageRenderControl(internalContent) {
@@ -86,7 +91,7 @@ async function InternalRequest(el, section) {
 
 /*JSON DataLoader */
 function GetJsonData(data) {
-    return fetch('./jsonData/' + data + '.json?ver='+ Math.floor(Math.random() * 100))
+    return fetch('./jsonData/' + data + '.json?ver=' + Math.floor(Math.random() * 100))
         .then(response => {
             return response.json();
         })
@@ -118,11 +123,91 @@ async function CvRequest() {
 }
 
 function DataCVRequest(e) {
-    if (e.getAttribute("data-section") == 'Skills') {
-        CV_SkillsRequest();
+    switch (e.getAttribute("data-section")) {
+        case 'Skills':
+            CV_SkillsRequest();
+            break;
+        case 'Experience':
+            CV_Experience();
+            break;
+        default:
+            break;
     }
 }
+/* Experience */
+async function CV_Experience() {
+    var TotalExp = document.querySelector('#TotalExp');
+    const Exp = await GetJsonData('Experience');
+    var Cards = [];
+    if (Exp) {
+        Exp.forEach(f => {
+            Cards.push(BuildExperience(f.Company, f.Link, f.Location, f.Role, f.Start, f.End, f.Description, f.Technologies));
+        });
+    }
 
+    var div = '';
+    for (let i = 0; i < Cards.length; i++) {
+        div += Cards[i];
+        if ((i % 3) == 2 || i == Cards.length - 1) {
+            TotalExp.innerHTML += BuildCertificatesRow(div);
+            div = '';
+        }
+    }
+}
+function BuildExperienceSeparator(div) {
+    var divRow =
+    '<div class="Row">'+
+    '    {Exps}'+
+    '</div>';
+    return divRow.replace(/{Exps}/g, div);
+}
+function BuildExperience(company, link, location, role, start, end, description, technologies) {
+    var output =
+        '<div class="col-md-4 col-xs-4">' +
+        '    <div class="card">' +
+        '        <div class="card-header">' +
+        '            <h3>' +
+        '                <a class="link-dark" href="{Link}" target="_blank">' +
+        '                    {Company}' +
+        '                    <i class="bi bi-link-45deg" style="font-size: 1.5rem; color: cornflowerblue;"></i>' +
+        '                </a> - {Location}' +
+        '            </h3>' +
+        '        </div>' +
+        '        <div class="card-body">' +
+        '            <h4>{Role}</h4>' +
+        '            <h5>{Start} – {End}</h5>' +
+        '            <p>' +
+        '                {Description}' +
+        '            </p>' +
+        //'            <hr />' +
+        '            <p>Tools and Tecnologies: {Tecnologies}</p>' +
+        '        </div>' +
+        '    </div>' +
+        '</div>';
+
+    var tool = '';
+    for (var i = 0; i < technologies.length; i++) {
+        tool += technologies[i].Tool;
+        if (i == technologies.length -1) {
+            tool += '.';
+        } else {
+            tool += ', ';
+        }
+    }
+
+    return output
+        .replace(/{Company}/g, company)
+        .replace(/{Link}/g, link)
+        .replace(/{Location}/g, location)
+        .replace(/{Role}/g, role)
+        .replace(/{Start}/g, start)
+        .replace(/{End}/g, end)
+        .replace(/{Description}/g, description)
+        .replace(/{Tecnologies}/g, tool);
+}
+
+
+/* Skills */
 async function CV_SkillsRequest() {
     var Dossie = document.querySelector('#skillsContent');
     const Skills = await GetJsonData('Dossie');
@@ -158,8 +243,8 @@ async function CV_SkillsRequest() {
 }
 function BuildSkillSeparator(id, typeMapping) {
     return '<tr><th colspan="4">{id}. {TypeMapping}</th></tr>'
-    .replace(/{id}/g, id)
-    .replace(/{TypeMapping}/g, typeMapping);
+        .replace(/{id}/g, id)
+        .replace(/{TypeMapping}/g, typeMapping);
 }
 function BuildSkills(tool, level, experience, observation, type) {
     var Skill =
@@ -191,7 +276,6 @@ async function IntroductionRequest() {
     }
 
 }
-
 function BuildIntroduction(p) {
     var DivElement =
         '<p>' +
@@ -217,7 +301,6 @@ async function FAQsRequest() {
     }
 
 }
-
 function BuildAccordionFAQs(question, answer, i) {
     var DivElement =
         '<div class="accordion-item">' +
@@ -273,7 +356,6 @@ async function CertificatesRequest() {
         }
     }
 }
-
 function BuildCertificatesRow(content) {
     var divRow =
         '<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 pb-3">' +
@@ -282,7 +364,6 @@ function BuildCertificatesRow(content) {
 
     return divRow.replace(/{content}/g, content);
 }
-
 function BuildCertificatesColumn(title, description, image, link, mins) {
     var divCol =
         '<div class="col">' +

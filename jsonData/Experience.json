@@ -1,0 +1,104 @@
+[
+    {
+        "Company": "DefinedCrowd",
+        "Link": "https://www.definedcrowd.com/",
+        "Location": "Porto, Portugal",
+        "Role": "Application Support Engineer",
+        "Start": "September 2020",
+        "End": "August 2021",
+        "Description": "Working with a team to identify and mitigate problems, triage bugs and incidents, for a private application of the company.",
+        "Technologies": [
+            {
+                "Tool": "Sentry"
+            },
+            {
+                "Tool": "Grafana"
+            },
+            {
+                "Tool": "Amplitude"
+            },
+            {
+                "Tool": "Twilio"
+            },
+            {
+                "Tool": "Kibana"
+            },
+            {
+                "Tool": "RabbitMQ"
+            },
+            {
+                "Tool": "Opsgenie"
+            },
+            {
+                "Tool": "MS SQL"
+            }
+        ]
+    },
+    {
+        "Company": "GTI Solution",
+        "Link": "https://www.gtisolution.com.br/",
+        "Location": "Sao Paulo, Brazil",
+        "Role": "System Analyst - Backend Developer",
+        "Start": "October 2018",
+        "End": "August 2020",
+        "Description": "The main activities were related to the development of APIs, updates, and the development of stored procedures in which I worked in Zurich Insurance Brazil projects and the GTI Solution product, the CRM Ping Seguro. Gaining a consistent experience with Stored Procedures and patterns as DDD and SOLID.",
+        "Technologies":[
+            {
+                "Tool": ".NET Framework 4.5"
+            },
+            {
+                "Tool": "MS SQL"
+            },
+            {
+                "Tool": "jQuery"
+            },
+            {
+                "Tool": "Web API"
+            }
+        ]
+    },
+    {
+        "Company": "Netfashion",
+        "Link": "http://www.netfashion.com.br/netf/index.html",
+        "Location": "Sao Paulo, Brazil",
+        "Role": "Fullstack Developer",
+        "Start": "August 2014",
+        "End": "October 2018",
+        "Description": "The activities consisted in the development of ERP integration solutions with the E-commerce platform (NopCommerce) and their customizations, as well as support for tickets via Zendesk.",
+        "Technologies":[
+            {
+                "Tool": "Classic ASP"
+            },
+            {
+                "Tool": "C#"
+            },
+            {
+                "Tool": ".NET MVC"
+            },
+            {
+                "Tool": "Xamarin"
+            },
+            {
+                "Tool": "Javascript"
+            },
+            {
+                "Tool": "jQuery"
+            },
+            {
+                "Tool": "CSS"
+            },
+            {
+                "Tool": "SEO"
+            },
+            {
+                "Tool": "Zendesk"
+            },
+            {
+                "Tool": "TOTVS"
+            },
+            {
+                "Tool": "Millennium"
+            }
+        ]
+    }
+]
