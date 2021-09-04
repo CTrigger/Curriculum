@@ -138,13 +138,23 @@ function DataCVRequest(e) {
 async function CV_Experience() {
     var TotalExp = document.querySelector('#TotalExp');
     const Exp = await GetJsonData('Experience');
+
+    Exp.sort((a, b) => {
+        return b.Id - a.Id;
+    });
+
+    if (Exp.length > 3) {
+        Exp.splice(3, Exp.length);
+
+    }
+
     var Cards = [];
     if (Exp) {
         Exp.forEach(f => {
             Cards.push(BuildExperience(f.Company, f.Link, f.Location, f.Role, f.Start, f.End, f.Description, f.Technologies));
         });
     }
-
+  
     var div = '';
     for (let i = 0; i < Cards.length; i++) {
         div += Cards[i];

@@ -1,5 +1,6 @@
 [
     {
+        "Id": 2020.09,
         "Company": "DefinedCrowd",
         "Link": "https://www.definedcrowd.com/",
         "Location": "Porto, Portugal",
@@ -35,6 +36,7 @@
         ]
     },
     {
+        "Id": 2018.10,
         "Company": "GTI Solution",
         "Link": "https://www.gtisolution.com.br/",
         "Location": "Sao Paulo, Brazil",
@@ -58,6 +60,7 @@
         ]
     },
     {
+        "Id": 2014.08,
         "Company": "Netfashion",
         "Link": "http://www.netfashion.com.br/netf/index.html",
         "Location": "Sao Paulo, Brazil",
