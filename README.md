@@ -1,6 +1,9 @@
 # Curriculum
 https://ctrigger.github.io/Curriculum/Index.html
 
+* 2021-10-19: updates
+    * Update Experiences
+
 * 2021-09-04: updates
     * Convert experiences into json Data
 

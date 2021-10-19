@@ -1,5 +1,29 @@
 [
     {
+        "Id": 2021.09,
+        "Company": "QuickOps",
+        "Link": "https://www.quickops.pt/",
+        "Location": "Porto, Portugal",
+        "Role": "IT Consulter - Outsourcing",
+        "Start": "September 2021",
+        "End": "Current",
+        "Description": "Working in outsorcing",
+        "Technologies": [
+            {
+                "Tool": "K2 - Blackpearl"
+            },
+            {
+                "Tool": "Workflows"
+            },
+            {
+                "Tool": "MS SQL"
+            },
+            {
+                "Tool": ".NET Windows Forms"
+            }
+        ]
+    },
+    {
         "Id": 2020.09,
         "Company": "DefinedCrowd",
         "Link": "https://www.definedcrowd.com/",
@@ -101,6 +125,33 @@
             },
             {
                 "Tool": "Millennium"
+            }
+        ]
+    },
+    {
+        "Id": 2010.09,
+        "Company": "Grupo Fashion",
+        "Link": "#",
+        "Location": "Sao Paulo, Brazil",
+        "Role": "Production Assistance: E-commerce and Marketing",
+        "Start": "August 2014",
+        "End": "October 2018",
+        "Description": "The activities consisted in Product Registration, Photography, Image Processing, Banner Development, E-mail marketing, Report in spreadsheets with sales and production statistics.",
+        "Technologies":[
+            {
+                "Tool": "Photoshop CS6"
+            },
+            {
+                "Tool": "Millennium ERP"
+            },
+            {
+                "Tool": "SEO"
+            },
+            {
+                "Tool": "HTML"
+            },
+            {
+                "Tool": "Excel"
             }
         ]
     }

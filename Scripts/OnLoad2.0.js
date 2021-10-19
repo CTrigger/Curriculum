@@ -143,15 +143,15 @@ async function CV_Experience() {
         return b.Id - a.Id;
     });
 
-    if (Exp.length > 3) {
-        Exp.splice(3, Exp.length);
+    // if (Exp.length > 3) {
+    //     Exp.splice(3, Exp.length);
+    // }
 
-    }
-
+    var CardsCounter = 0;
     var Cards = [];
     if (Exp) {
         Exp.forEach(f => {
-            Cards.push(BuildExperience(f.Company, f.Link, f.Location, f.Role, f.Start, f.End, f.Description, f.Technologies));
+            Cards.push(BuildExperience(f.Company, f.Link, f.Location, f.Role, f.Start, f.End, f.Description, f.Technologies, CardsCounter++));
         });
     }
   
@@ -171,9 +171,9 @@ function BuildExperienceSeparator(div) {
     '</div>';
     return divRow.replace(/{Exps}/g, div);
 }
-function BuildExperience(company, link, location, role, start, end, description, technologies) {
+function BuildExperience(company, link, location, role, start, end, description, technologies, CardsCounter) {
     var output =
-        '<div class="col-md-4 col-xs-4">' +
+        '<div class="col-md-4 col-xs-4 {Print}">' +
         '    <div class="card">' +
         '        <div class="card-header">' +
         '            <h3>' +
@@ -189,7 +189,6 @@ function BuildExperience(company, link, location, role, start, end, description,
         '            <p>' +
         '                {Description}' +
         '            </p>' +
-        //'            <hr />' +
         '            <p>Tools and Tecnologies: {Tecnologies}</p>' +
         '        </div>' +
         '    </div>' +
@@ -204,7 +203,10 @@ function BuildExperience(company, link, location, role, start, end, description,
             tool += ', ';
         }
     }
-
+    var hidden = '';
+    if (CardsCounter > 2) {
+        hidden = 'bi';
+    }
     return output
         .replace(/{Company}/g, company)
         .replace(/{Link}/g, link)
@@ -213,7 +215,8 @@ function BuildExperience(company, link, location, role, start, end, description,
         .replace(/{Start}/g, start)
         .replace(/{End}/g, end)
         .replace(/{Description}/g, description)
-        .replace(/{Tecnologies}/g, tool);
+        .replace(/{Tecnologies}/g, tool)
+        .replace(/{Print}/g, hidden);
 }
 
 
