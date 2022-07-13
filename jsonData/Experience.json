@@ -7,7 +7,7 @@
         "Role": "IT Consulter - Outsourcing",
         "Start": "September 2021",
         "End": "Current",
-        "Description": "Working in outsorcing",
+        "Description": "Outsourcing consulting and services company.<br /><br />Activities:<br />Requirements analysis and improvements, Workflows, Helpdesk, user and profile management, bug analysis and solutions, analysis and proof of concept, monitoring and support of internship project.<br /><br />Project:<br />Legacy project in the area of ​​banking in the investment segment, being an orchestrator of documents and integration between other services of the primary and secondary market",
         "Technologies": [
             {
                 "Tool": "K2 - Blackpearl"
@@ -31,7 +31,7 @@
         "Role": "Application Support Engineer",
         "Start": "September 2020",
         "End": "August 2021",
-        "Description": "Working with a team to identify and mitigate problems, triage bugs and incidents, for a private application of the company.",
+        "Description": "Startup company in the artificial intelligence (AI) segment of speech data collection and image recognition<br /><br />Activities:<br />Service monitoring and support in production, problem analysis and mitigation, log analysis, 24/7 on-call scaling, messaging and ticket analysis",
         "Technologies": [
             {
                 "Tool": "Sentry"
@@ -67,7 +67,7 @@
         "Role": "System Analyst - Backend Developer",
         "Start": "October 2018",
         "End": "August 2020",
-        "Description": "The main activities were related to the development of APIs, updates, and the development of stored procedures in which I worked in Zurich Insurance Brazil projects and the GTI Solution product, the CRM Ping Seguro. Gaining a consistent experience with Stored Procedures and patterns as DDD and SOLID.",
+        "Description": "Software House that operates in the segment of development of platforms and solutions for the insurance segment.<br /><br />Activities:<br />Analysis and development of new features for ZConnect (Zurich Seguros Brasil).<br /><br />Project:<br />The ZConnect project operates in the home, business, E&O, D&O, Agricultural insurance segments.",
         "Technologies":[
             {
                 "Tool": ".NET Framework 4.5"
@@ -91,7 +91,7 @@
         "Role": "Fullstack Developer",
         "Start": "August 2014",
         "End": "October 2018",
-        "Description": "The activities consisted in the development of ERP integration solutions with the E-commerce platform (NopCommerce) and their customizations, as well as support for tickets via Zendesk.",
+        "Description": "Activities:<br />Helpdesk support, web-based translations and development in e-commerce customized for the B2B and B2C segments.<br /><br />Projects:<br />Mobile integration with ERP for the sale and organization of warehouses for the self service attendance in the physical store.<br /><br />Synchronizations and automated integrations.<br />FTP integrations<br /><br />Payments gateway integration<br /><br />Plugins development",
         "Technologies":[
             {
                 "Tool": "Classic ASP"
@@ -136,7 +136,7 @@
         "Role": "Production Assistance: E-commerce and Marketing",
         "Start": "August 2014",
         "End": "October 2018",
-        "Description": "The activities consisted in Product Registration, Photography, Image Processing, Banner Development, E-mail marketing, Report in spreadsheets with sales and production statistics.",
+        "Description": "Company in the textile segment for sale and sale for the gross and retail segment of woman's fashion.<br /><br />Activities:<br />Product registry, Photo and image after production, Banners development, Email marketing, Sheets reports with statistical data on sales and production in collective sales campaigns and e-commerce management.",
         "Technologies":[
             {
                 "Tool": "Photoshop CS6"

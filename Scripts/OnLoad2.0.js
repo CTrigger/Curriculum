@@ -173,7 +173,7 @@ function BuildExperienceSeparator(div) {
 }
 function BuildExperience(company, link, location, role, start, end, description, technologies, CardsCounter) {
     var output =
-        '<div class="col-md-4 col-xs-4 {Print}">' +
+        '<div class="col-md-12 col-xs-12 {Print}">' +
         '    <div class="card">' +
         '        <div class="card-header">' +
         '            <h3>' +
@@ -204,9 +204,9 @@ function BuildExperience(company, link, location, role, start, end, description,
         }
     }
     var hidden = '';
-    if (CardsCounter > 2) {
-        hidden = 'bi';
-    }
+    // if (CardsCounter > 2) {
+    //     hidden = 'bi';
+    // }
     return output
         .replace(/{Company}/g, company)
         .replace(/{Link}/g, link)
@@ -233,7 +233,7 @@ async function CV_SkillsRequest() {
     });
 
     var TypeMapping = [
-        'Programming Languages', //1
+        'Programming Languages & Frameworks', //1
         'Database',             //2
         'DevOps',               //3
         'Good Practices',       //4

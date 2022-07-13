@@ -7,6 +7,13 @@
         "Type": 1
     },
     {
+        "Tool": ".NET Core",
+        "Level": 3,
+        "Experience": "1 years",
+        "Observation": "3.1",
+        "Type": 1
+    },
+    {
         "Tool": "ASP.NET MVC",
         "Level": 3,
         "Experience": "4 years",
@@ -175,17 +182,10 @@
         "Type": 5
     },
     {
-        "Tool": "Node.js",
-        "Level": 1,
-        "Experience": "&lt;1 year",
-        "Observation": "Personal Projects",
-        "Type": 1
-    },
-    {
         "Tool": "Git",
-        "Level": 1,
-        "Experience": "&lt;1 year",
-        "Observation": "Personal Projects",
+        "Level": 2,
+        "Experience": "1 year",
+        "Observation": "",
         "Type": 3
     },
     {
@@ -219,8 +219,8 @@
     {
         "Tool": "Sony Vegas",
         "Level": 1,
-        "Experience": "2 years",
-        "Observation": "Personal Projects",
+        "Experience": "0 years",
+        "Observation": "Youtube Personal Projects",
         "Type": 5
     },
     {
@@ -243,13 +243,6 @@
         "Experience": "2 years",
         "Observation": "College Projects",
         "Type": 6
-    },
-    {
-        "Tool": "Audacity",
-        "Level": 1,
-        "Experience": "1 year",
-        "Observation": "Personal Projects",
-        "Type": 5
     },
     {
         "Tool": "Protheus PCB",
@@ -346,7 +339,7 @@
         "Tool": "ITIL",
         "Level": 1,
         "Experience": "&lt;1 year",
-        "Observation": "Version 2",
+        "Observation": "Version 2, Academic",
         "Type": 4
     }
 ]
