@@ -1,4 +1,41 @@
 [
+    { 
+        "Id": 2022.09,
+        "Company": "Tridonic",
+        "Link": "https://www.tridonic.com/en/int",
+        "Location": "Gaia, Porto, Portugal",
+        "Role": "Senior Back End Developer",
+        "Start": "September 2022",
+        "End": "Current",
+        "Description": "Software Center Member of the Zutombel Group<br />Develops software to support systems and applications for drivers and light control systems.<br /><br />Activities:<br />Analysis and development of features, Web development, Desktop application development, Software-hardware integration, Development of unit, integrated, and behavioral tests, Updating deprecated tools and frameworks, Development of internal tools<br /><br />Project:<br />Software suite for programming light control drivers. The product consists of the following components: generator, analyser, configurator, and reader.<br /><br />",
+        "Technologies": [
+            {
+                "Tool": "Angular"
+            },
+            {
+                "Tool": ".NET 5.0"
+            },
+            {
+                "Tool": ".NET 6.0"
+            },
+            {
+                "Tool": "Windows Forms"
+            },
+            {
+                "Tool": "Typescript"
+            },
+            {
+                "Tool": "MS SQL"
+            },
+            {
+                "Tool": "NFC"
+            },
+            {
+                "Tool": "DALI"
+            }
+        ]
+
+    },
     {
         "Id": 2021.09,
         "Company": "QuickOps",
@@ -6,7 +43,7 @@
         "Location": "Porto, Portugal",
         "Role": "IT Consulter - Outsourcing",
         "Start": "September 2021",
-        "End": "Current",
+        "End": "September 2022",
         "Description": "Outsourcing consulting and services company.<br /><br />Activities:<br />Requirements analysis and improvements, Workflows, Helpdesk, user and profile management, bug analysis and solutions, analysis and proof of concept, monitoring and support of internship project.<br /><br />Project:<br />Legacy project in the area of ​​banking in the investment segment, being an orchestrator of documents and integration between other services of the primary and secondary market",
         "Technologies": [
             {
